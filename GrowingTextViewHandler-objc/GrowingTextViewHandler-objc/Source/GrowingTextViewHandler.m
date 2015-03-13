@@ -22,6 +22,9 @@
   if (self) {
     self.growingTextView = textView;
     self.heightConstraint = heightConstraint;
+    self.minimumNumberOfLines = 2;
+    self.maximumNumberOfLines = 3;
+    self.animationDuration = 0.7;
     [self updateInitialHeightAndResize];
   }
   return self;

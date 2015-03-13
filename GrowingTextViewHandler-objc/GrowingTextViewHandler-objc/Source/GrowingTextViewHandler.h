@@ -16,4 +16,7 @@
 @property (nonatomic, assign) NSInteger minimumNumberOfLines;
 @property (nonatomic, assign) CGFloat animationDuration;
 
+- (id)initWithTextView:(UITextView *)textView withHeightConstraint:(NSLayoutConstraint *)heightConstraint;
+- (void)resizeTextViewWithAnimation:(BOOL)animated;
+
 @end

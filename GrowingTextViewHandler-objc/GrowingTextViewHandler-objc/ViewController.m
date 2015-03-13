@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "GrowingTextViewHandler.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
+@property (strong, nonatomic) GrowingTextViewHandler *handler;
 
 @end
 
@@ -16,7 +21,9 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  self.handler = [[GrowingTextViewHandler alloc]initWithTextView:self.textView withHeightConstraint:self.heightConstraint];
+  self.handler.minimumNumberOfLines = 3;
+  self.handler.maximumNumberOfLines = 10;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +31,8 @@
   // Dispose of any resources that can be recreated.
 }
 
+
+- (void)textViewDidChange:(UITextView *)textView {
+  [self.handler resizeTextViewWithAnimation:YES];
+}
 @end
