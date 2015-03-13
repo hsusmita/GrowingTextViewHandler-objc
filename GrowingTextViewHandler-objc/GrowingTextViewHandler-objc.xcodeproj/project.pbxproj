@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69D5E5031AB2BF1300B64BDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E5021AB2BF1300B64BDE /* main.m */; };
+		69D5E5061AB2BF1300B64BDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E5051AB2BF1300B64BDE /* AppDelegate.m */; };
+		69D5E5091AB2BF1300B64BDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E5081AB2BF1300B64BDE /* ViewController.m */; };
+		69D5E50C1AB2BF1300B64BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D5E50A1AB2BF1300B64BDE /* Main.storyboard */; };
+		69D5E50E1AB2BF1300B64BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D5E50D1AB2BF1300B64BDE /* Images.xcassets */; };
+		69D5E5111AB2BF1300B64BDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D5E50F1AB2BF1300B64BDE /* LaunchScreen.xib */; };
+		69D5E51D1AB2BF1400B64BDE /* GrowingTextViewHandler_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E51C1AB2BF1400B64BDE /* GrowingTextViewHandler_objcTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69D5E5171AB2BF1400B64BDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69D5E4F51AB2BF1300B64BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D5E4FC1AB2BF1300B64BDE;
+			remoteInfo = "GrowingTextViewHandler-objc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69D5E4FD1AB2BF1300B64BDE /* GrowingTextViewHandler-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GrowingTextViewHandler-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D5E5011AB2BF1300B64BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D5E5021AB2BF1300B64BDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69D5E5041AB2BF1300B64BDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69D5E5051AB2BF1300B64BDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69D5E5071AB2BF1300B64BDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69D5E5081AB2BF1300B64BDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69D5E50B1AB2BF1300B64BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69D5E50D1AB2BF1300B64BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69D5E5101AB2BF1300B64BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		69D5E5161AB2BF1400B64BDE /* GrowingTextViewHandler-objcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GrowingTextViewHandler-objcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D5E51B1AB2BF1400B64BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D5E51C1AB2BF1400B64BDE /* GrowingTextViewHandler_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingTextViewHandler_objcTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69D5E4FA1AB2BF1300B64BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D5E5131AB2BF1400B64BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69D5E4F41AB2BF1300B64BDE = {
+			isa = PBXGroup;
+			children = (
+				69D5E4FF1AB2BF1300B64BDE /* GrowingTextViewHandler-objc */,
+				69D5E5191AB2BF1400B64BDE /* GrowingTextViewHandler-objcTests */,
+				69D5E4FE1AB2BF1300B64BDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69D5E4FE1AB2BF1300B64BDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69D5E4FD1AB2BF1300B64BDE /* GrowingTextViewHandler-objc.app */,
+				69D5E5161AB2BF1400B64BDE /* GrowingTextViewHandler-objcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69D5E4FF1AB2BF1300B64BDE /* GrowingTextViewHandler-objc */ = {
+			isa = PBXGroup;
+			children = (
+				69D5E5041AB2BF1300B64BDE /* AppDelegate.h */,
+				69D5E5051AB2BF1300B64BDE /* AppDelegate.m */,
+				69D5E5071AB2BF1300B64BDE /* ViewController.h */,
+				69D5E5081AB2BF1300B64BDE /* ViewController.m */,
+				69D5E50A1AB2BF1300B64BDE /* Main.storyboard */,
+				69D5E50D1AB2BF1300B64BDE /* Images.xcassets */,
+				69D5E50F1AB2BF1300B64BDE /* LaunchScreen.xib */,
+				69D5E5001AB2BF1300B64BDE /* Supporting Files */,
+			);
+			path = "GrowingTextViewHandler-objc";
+			sourceTree = "<group>";
+		};
+		69D5E5001AB2BF1300B64BDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69D5E5011AB2BF1300B64BDE /* Info.plist */,
+				69D5E5021AB2BF1300B64BDE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69D5E5191AB2BF1400B64BDE /* GrowingTextViewHandler-objcTests */ = {
+			isa = PBXGroup;
+			children = (
+				69D5E51C1AB2BF1400B64BDE /* GrowingTextViewHandler_objcTests.m */,
+				69D5E51A1AB2BF1400B64BDE /* Supporting Files */,
+			);
+			path = "GrowingTextViewHandler-objcTests";
+			sourceTree = "<group>";
+		};
+		69D5E51A1AB2BF1400B64BDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69D5E51B1AB2BF1400B64BDE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69D5E4FC1AB2BF1300B64BDE /* GrowingTextViewHandler-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D5E5201AB2BF1400B64BDE /* Build configuration list for PBXNativeTarget "GrowingTextViewHandler-objc" */;
+			buildPhases = (
+				69D5E4F91AB2BF1300B64BDE /* Sources */,
+				69D5E4FA1AB2BF1300B64BDE /* Frameworks */,
+				69D5E4FB1AB2BF1300B64BDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GrowingTextViewHandler-objc";
+			productName = "GrowingTextViewHandler-objc";
+			productReference = 69D5E4FD1AB2BF1300B64BDE /* GrowingTextViewHandler-objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69D5E5151AB2BF1400B64BDE /* GrowingTextViewHandler-objcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D5E5231AB2BF1400B64BDE /* Build configuration list for PBXNativeTarget "GrowingTextViewHandler-objcTests" */;
+			buildPhases = (
+				69D5E5121AB2BF1400B64BDE /* Sources */,
+				69D5E5131AB2BF1400B64BDE /* Frameworks */,
+				69D5E5141AB2BF1400B64BDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69D5E5181AB2BF1400B64BDE /* PBXTargetDependency */,
+			);
+			name = "GrowingTextViewHandler-objcTests";
+			productName = "GrowingTextViewHandler-objcTests";
+			productReference = 69D5E5161AB2BF1400B64BDE /* GrowingTextViewHandler-objcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69D5E4F51AB2BF1300B64BDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = hsusmita.com;
+				TargetAttributes = {
+					69D5E4FC1AB2BF1300B64BDE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					69D5E5151AB2BF1400B64BDE = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 69D5E4FC1AB2BF1300B64BDE;
+					};
+				};
+			};
+			buildConfigurationList = 69D5E4F81AB2BF1300B64BDE /* Build configuration list for PBXProject "GrowingTextViewHandler-objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69D5E4F41AB2BF1300B64BDE;
+			productRefGroup = 69D5E4FE1AB2BF1300B64BDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69D5E4FC1AB2BF1300B64BDE /* GrowingTextViewHandler-objc */,
+				69D5E5151AB2BF1400B64BDE /* GrowingTextViewHandler-objcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69D5E4FB1AB2BF1300B64BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D5E50C1AB2BF1300B64BDE /* Main.storyboard in Resources */,
+				69D5E5111AB2BF1300B64BDE /* LaunchScreen.xib in Resources */,
+				69D5E50E1AB2BF1300B64BDE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D5E5141AB2BF1400B64BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69D5E4F91AB2BF1300B64BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D5E5091AB2BF1300B64BDE /* ViewController.m in Sources */,
+				69D5E5061AB2BF1300B64BDE /* AppDelegate.m in Sources */,
+				69D5E5031AB2BF1300B64BDE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D5E5121AB2BF1400B64BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D5E51D1AB2BF1400B64BDE /* GrowingTextViewHandler_objcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69D5E5181AB2BF1400B64BDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69D5E4FC1AB2BF1300B64BDE /* GrowingTextViewHandler-objc */;
+			targetProxy = 69D5E5171AB2BF1400B64BDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69D5E50A1AB2BF1300B64BDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D5E50B1AB2BF1300B64BDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69D5E50F1AB2BF1300B64BDE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D5E5101AB2BF1300B64BDE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69D5E51E1AB2BF1400B64BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69D5E51F1AB2BF1400B64BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69D5E5211AB2BF1400B64BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "GrowingTextViewHandler-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69D5E5221AB2BF1400B64BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "GrowingTextViewHandler-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		69D5E5241AB2BF1400B64BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GrowingTextViewHandler-objcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrowingTextViewHandler-objc.app/GrowingTextViewHandler-objc";
+			};
+			name = Debug;
+		};
+		69D5E5251AB2BF1400B64BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GrowingTextViewHandler-objcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrowingTextViewHandler-objc.app/GrowingTextViewHandler-objc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69D5E4F81AB2BF1300B64BDE /* Build configuration list for PBXProject "GrowingTextViewHandler-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D5E51E1AB2BF1400B64BDE /* Debug */,
+				69D5E51F1AB2BF1400B64BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D5E5201AB2BF1400B64BDE /* Build configuration list for PBXNativeTarget "GrowingTextViewHandler-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D5E5211AB2BF1400B64BDE /* Debug */,
+				69D5E5221AB2BF1400B64BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		69D5E5231AB2BF1400B64BDE /* Build configuration list for PBXNativeTarget "GrowingTextViewHandler-objcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D5E5241AB2BF1400B64BDE /* Debug */,
+				69D5E5251AB2BF1400B64BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69D5E4F51AB2BF1300B64BDE /* Project object */;
+}
