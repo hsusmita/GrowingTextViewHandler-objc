@@ -14,6 +14,7 @@
 		69D5E50E1AB2BF1300B64BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D5E50D1AB2BF1300B64BDE /* Images.xcassets */; };
 		69D5E5111AB2BF1300B64BDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D5E50F1AB2BF1300B64BDE /* LaunchScreen.xib */; };
 		69D5E51D1AB2BF1400B64BDE /* GrowingTextViewHandler_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E51C1AB2BF1400B64BDE /* GrowingTextViewHandler_objcTests.m */; };
+		69D5E5281AB2BF6F00B64BDE /* GrowingTextViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E5271AB2BF6F00B64BDE /* GrowingTextViewHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		69D5E5161AB2BF1400B64BDE /* GrowingTextViewHandler-objcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GrowingTextViewHandler-objcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5E51B1AB2BF1400B64BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5E51C1AB2BF1400B64BDE /* GrowingTextViewHandler_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingTextViewHandler_objcTests.m; sourceTree = "<group>"; };
+		69D5E5261AB2BF6F00B64BDE /* GrowingTextViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowingTextViewHandler.h; path = Source/GrowingTextViewHandler.h; sourceTree = "<group>"; };
+		69D5E5271AB2BF6F00B64BDE /* GrowingTextViewHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrowingTextViewHandler.m; path = Source/GrowingTextViewHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 				69D5E50D1AB2BF1300B64BDE /* Images.xcassets */,
 				69D5E50F1AB2BF1300B64BDE /* LaunchScreen.xib */,
 				69D5E5001AB2BF1300B64BDE /* Supporting Files */,
+				69D5E5291AB2BF7500B64BDE /* Source */,
 			);
 			path = "GrowingTextViewHandler-objc";
 			sourceTree = "<group>";
@@ -117,6 +121,15 @@
 				69D5E51B1AB2BF1400B64BDE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69D5E5291AB2BF7500B64BDE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				69D5E5261AB2BF6F00B64BDE /* GrowingTextViewHandler.h */,
+				69D5E5271AB2BF6F00B64BDE /* GrowingTextViewHandler.m */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				69D5E5091AB2BF1300B64BDE /* ViewController.m in Sources */,
 				69D5E5061AB2BF1300B64BDE /* AppDelegate.m in Sources */,
+				69D5E5281AB2BF6F00B64BDE /* GrowingTextViewHandler.m in Sources */,
 				69D5E5031AB2BF1300B64BDE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
