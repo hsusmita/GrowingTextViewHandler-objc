@@ -1,6 +1,6 @@
 Pod:: Spec.new do |spec|
   spec.platform     = 'ios', '8.0'
-  spec.name         = 'GrowingTextViewHandler-objc'
+  spec.name         = 'GrowingTextViewHandler'
   spec.version      = '1.0.0'
   spec.summary      = 'An NSObject subclass to handle resizing of UITextView as the user types in.'
   spec.author = {
