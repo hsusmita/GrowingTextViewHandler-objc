@@ -3,13 +3,13 @@ An NSObject subclass to handle resizing of UITextView as the user types in. The 
 These are the public properties which can be set from the client code.
   * animationDuration    : Default 0.7
   * maximumNumberOfLines : Default 3
-  * minimumNumberOfLines : Default 2
+  * minimumNumberOfLines : Default 1
 
 #Installation
 
 Add following lines in your pod file  
 
-pod 'GrowingTextViewHandler', '~> 1.0.0'
+pod 'GrowingTextViewHandler', '~> 1.0.1'
 
 #Usage
 
@@ -28,8 +28,7 @@ First create an instance of GrowingTextViewHandler. It takes an UITextView and i
       - (void)viewDidLoad {
         [super viewDidLoad];
         self.handler = [[GrowingTextViewHandler alloc]initWithTextView:self.textView withHeightConstraint:self.heightConstraint];
-        self.handler.minimumNumberOfLines = 3;
-        self.handler.maximumNumberOfLines = 10;
+	    [self.handler updateMinimumNumberOfLines:3 andMaximumNumberOfLine:8];
        }
 
       - (void)textViewDidChange:(UITextView *)textView {
