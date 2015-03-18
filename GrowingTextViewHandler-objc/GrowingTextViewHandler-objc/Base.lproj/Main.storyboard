@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5d-qE-PNG">
-                                <rect key="frame" x="0.0" y="10" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="175" width="550" height="50"/>
                                 <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Rcx-lJ-yG0"/>
@@ -28,13 +29,29 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="ITU-Ue-hxN"/>
                                 </connections>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuj-eV-KYF">
+                                <rect key="frame" x="550" y="175" width="34" height="50"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.70980392160000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Y5d-qE-PNG" secondAttribute="trailing" id="Lma-xS-m7v"/>
+                            <constraint firstItem="Y5d-qE-PNG" firstAttribute="top" secondItem="nuj-eV-KYF" secondAttribute="top" id="5Dc-vv-26e"/>
+                            <constraint firstAttribute="trailing" secondItem="Y5d-qE-PNG" secondAttribute="trailing" constant="50" id="Lma-xS-m7v"/>
+                            <constraint firstItem="Y5d-qE-PNG" firstAttribute="bottom" secondItem="nuj-eV-KYF" secondAttribute="bottom" id="MsZ-7g-Zu1"/>
                             <constraint firstItem="Y5d-qE-PNG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="SWs-e8-Lco"/>
+                            <constraint firstItem="Y5d-qE-PNG" firstAttribute="height" secondItem="nuj-eV-KYF" secondAttribute="height" id="fnk-Gg-bla"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nuj-eV-KYF" secondAttribute="trailing" id="hL3-za-fMN"/>
                             <constraint firstItem="Y5d-qE-PNG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="10" id="lat-XN-xbO"/>
+                            <constraint firstAttribute="centerY" secondItem="Y5d-qE-PNG" secondAttribute="centerY" constant="100" id="tl2-If-T2d"/>
+                            <constraint firstItem="Y5d-qE-PNG" firstAttribute="trailing" secondItem="nuj-eV-KYF" secondAttribute="leading" id="uws-w9-cbs"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fnk-Gg-bla"/>
+                                <exclude reference="lat-XN-xbO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="heightConstraint" destination="Rcx-lJ-yG0" id="Q5Z-4T-aRs"/>

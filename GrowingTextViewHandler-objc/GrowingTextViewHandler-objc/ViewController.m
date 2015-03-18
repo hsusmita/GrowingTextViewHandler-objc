@@ -22,8 +22,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.handler = [[GrowingTextViewHandler alloc]initWithTextView:self.textView withHeightConstraint:self.heightConstraint];
-  self.handler.minimumNumberOfLines = 3;
-  self.handler.maximumNumberOfLines = 10;
+  [self.handler updateMinimumNumberOfLines:3 andMaximumNumberOfLine:8];
 }
 
 - (void)didReceiveMemoryWarning {

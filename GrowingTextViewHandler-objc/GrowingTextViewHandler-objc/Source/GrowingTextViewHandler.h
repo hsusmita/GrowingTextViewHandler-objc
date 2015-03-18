@@ -12,11 +12,10 @@
 @interface GrowingTextViewHandler : NSObject
 
 @property (nonatomic, strong) UITextView *growingTextView;
-@property (nonatomic, assign) NSInteger maximumNumberOfLines;
-@property (nonatomic, assign) NSInteger minimumNumberOfLines;
 @property (nonatomic, assign) CGFloat animationDuration;
 
 - (id)initWithTextView:(UITextView *)textView withHeightConstraint:(NSLayoutConstraint *)heightConstraint;
 - (void)resizeTextViewWithAnimation:(BOOL)animated;
+- (void)updateMinimumNumberOfLines:(NSInteger)minimumNumberOfLines andMaximumNumberOfLine:(NSInteger)maximumNumberOfLines;
 
 @end
