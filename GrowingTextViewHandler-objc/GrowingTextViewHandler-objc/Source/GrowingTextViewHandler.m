@@ -86,12 +86,19 @@ static NSInteger kMaximumNumberOfLines = INT_MAX;
 }
 
 - (CGFloat)currentHeight {
-  return self.growingTextView.contentSize.height;
+  CGFloat width = self.growingTextView.bounds.size.width - 2.0 * self.growingTextView.textContainer.lineFragmentPadding;
+  CGRect boundingRect = [self.growingTextView.text boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                                         options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
+                                                      attributes:@{ NSFontAttributeName:self.growingTextView.font}
+                                                         context:nil];
+  CGFloat heightByBoundingRect = CGRectGetHeight(boundingRect) + self.growingTextView.font.lineHeight;
+  return MAX(heightByBoundingRect,self.growingTextView.contentSize.height);
 }
 
-- (NSInteger) currentNumberOfLines  {
+
+- (NSInteger)currentNumberOfLines  {
   CGFloat caretHeight = [self.growingTextView caretRectForPosition:self.growingTextView.selectedTextRange.end].size.height;
-  CGFloat totalHeight = self.growingTextView.contentSize.height + self.growingTextView.textContainerInset.top + self.growingTextView.textContainerInset.bottom;
+  CGFloat totalHeight = [self currentHeight] + self.growingTextView.textContainerInset.top + self.growingTextView.textContainerInset.bottom;
   NSInteger numberOfLines = (totalHeight/caretHeight) - 1;
   return numberOfLines;
 }
