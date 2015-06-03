@@ -2,7 +2,7 @@
 An NSObject subclass to handle resizing of UITextView as the user types in. The textview resizes as long as the number of lines lies between specified minimum and maximum number of lines. 
 These are the public properties which can be set from the client code.
   * animationDuration    : Default 0.7
-  * maximumNumberOfLines : Default 3
+  * maximumNumberOfLines : Default INT_MAX
   * minimumNumberOfLines : Default 1
 
 #Installation

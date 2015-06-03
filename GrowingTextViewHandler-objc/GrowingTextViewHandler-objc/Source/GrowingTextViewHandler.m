@@ -8,9 +8,9 @@
 
 #import "GrowingTextViewHandler.h"
 
-#define kDefaultAnimationDuration 0.7
-#define kMinimumNumberOfLines     1
-#define kMaximumNumberOfLines     3
+static CGFloat kDefaultAnimationDuration = 0.7;
+static NSInteger kMinimumNumberOfLines = 1;
+static NSInteger kMaximumNumberOfLines = INT_MAX;
 
 @interface GrowingTextViewHandler()
 
@@ -26,7 +26,6 @@
 
 - (id)initWithTextView:(UITextView *)textView
   withHeightConstraint:(NSLayoutConstraint *)heightConstraint {
-  
   self = [super init];
   if (self) {
     self.growingTextView = textView;
@@ -42,7 +41,6 @@
 
 - (void)updateMinimumNumberOfLines:(NSInteger)minimumNumberOfLines
             andMaximumNumberOfLine:(NSInteger)maximumNumberOfLines {
-  
   _minimumNumberOfLines = minimumNumberOfLines;
   _maximumNumberOfLines = maximumNumberOfLines;
   [self updateInitialHeightAndResize];
