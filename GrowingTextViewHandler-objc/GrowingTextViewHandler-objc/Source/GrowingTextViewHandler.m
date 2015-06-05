@@ -8,7 +8,7 @@
 
 #import "GrowingTextViewHandler.h"
 
-static CGFloat kDefaultAnimationDuration = 0.7;
+static CGFloat kDefaultAnimationDuration = 0.5;
 static NSInteger kMinimumNumberOfLines = 1;
 static NSInteger kMaximumNumberOfLines = INT_MAX;
 
@@ -57,7 +57,9 @@ static NSInteger kMaximumNumberOfLines = INT_MAX;
   }else if (textViewNumberOfLines > self.maximumNumberOfLines){
     verticalAlignmentConstant = self.maximumHeight;
   }
-  [self updateVerticalAlignmentWithHeight:verticalAlignmentConstant animated:animated];
+  if (self.heightConstraint.constant != verticalAlignmentConstant) {
+    [self updateVerticalAlignmentWithHeight:verticalAlignmentConstant animated:animated];
+  }
   if (textViewNumberOfLines <= self.maximumNumberOfLines) {
     [self.growingTextView setContentOffset:CGPointZero animated:YES];
   }

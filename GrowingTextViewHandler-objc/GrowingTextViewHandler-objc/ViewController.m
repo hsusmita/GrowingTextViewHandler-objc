@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.handler = [[GrowingTextViewHandler alloc]initWithTextView:self.textView withHeightConstraint:self.heightConstraint];
-  [self.handler updateMinimumNumberOfLines:3 andMaximumNumberOfLine:8];
+  [self.handler updateMinimumNumberOfLines:1 andMaximumNumberOfLine:INT_MAX];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,8 +30,12 @@
   // Dispose of any resources that can be recreated.
 }
 
-
 - (void)textViewDidChange:(UITextView *)textView {
   [self.handler resizeTextViewWithAnimation:YES];
 }
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+  return YES;
+}
+
 @end
