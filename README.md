@@ -9,7 +9,7 @@ These are the public properties which can be set from the client code.
 
 Add following lines in your pod file  
 
-pod 'GrowingTextViewHandler', '~> 1.0.1'
+pod 'GrowingTextViewHandler', '~> 1.0.2'
 
 #Usage
 
@@ -36,3 +36,6 @@ First create an instance of GrowingTextViewHandler. It takes an UITextView and i
       }
      @end
 
+# Screenshots
+
+	 <img src="https://cloud.githubusercontent.com/assets/3590619/8056375/1c37993a-0ec5-11e5-9a8b-1708ba2e4c6f.gif" width="400" display="inline-block">
