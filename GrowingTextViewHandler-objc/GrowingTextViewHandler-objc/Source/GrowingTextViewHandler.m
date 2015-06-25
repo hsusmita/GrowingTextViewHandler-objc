@@ -119,4 +119,13 @@ static NSInteger kMaximumNumberOfLines = INT_MAX;
   }
 }
 
+- (void)setText:(NSString *)text withAnimation:(BOOL)animated {
+  self.growingTextView.text = text;
+  if (text.length > 0) {
+    [self resizeTextViewWithAnimation:animated];
+  }else {
+    [self updateVerticalAlignmentWithHeight:self.initialHeight animated:animated];
+  }
+}
+
 @end
