@@ -9,7 +9,7 @@ These are the public properties which can be set from the client code.
 
 Add following lines in your pod file  
 
-pod 'GrowingTextViewHandler', '~> 1.0.2'
+pod 'GrowingTextViewHandler', '~> 1.0.3'
 
 #Usage
 
