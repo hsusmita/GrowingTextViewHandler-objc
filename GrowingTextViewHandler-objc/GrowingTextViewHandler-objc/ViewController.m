@@ -21,13 +21,18 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.handler = [[GrowingTextViewHandler alloc]initWithTextView:self.textView withHeightConstraint:self.heightConstraint];
+  self.handler = [[GrowingTextViewHandler alloc]initWithTextView:self.textView
+                                            withHeightConstraint:nil];
   [self.handler updateMinimumNumberOfLines:1 andMaximumNumberOfLine:INT_MAX];
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+  [self.handler resizeTextViewWithAnimation:YES];
 }
 
 - (void)textViewDidChange:(UITextView *)textView {

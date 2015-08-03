@@ -57,6 +57,7 @@ static NSInteger kMaximumNumberOfLines = INT_MAX;
   }else if (textViewNumberOfLines > self.maximumNumberOfLines){
     verticalAlignmentConstant = self.maximumHeight;
   }
+
   if (self.heightConstraint.constant != verticalAlignmentConstant) {
     [self updateVerticalAlignmentWithHeight:verticalAlignmentConstant animated:animated];
   }
@@ -107,16 +108,29 @@ static NSInteger kMaximumNumberOfLines = INT_MAX;
 
 - (void)updateVerticalAlignmentWithHeight:(CGFloat)height animated:(BOOL)animated {
   self.heightConstraint.constant = height;
+
   if (animated == true) {
     [UIView animateWithDuration:self.animationDuration
                      animations:^{
-      [self.growingTextView.superview layoutIfNeeded];
+                       if (self.heightConstraint == nil) {
+                         CGRect frame = self.growingTextView.frame;
+                         frame.size.height = height;
+                         self.growingTextView.frame = frame;
+                       }else {
+                         [self.growingTextView.superview layoutIfNeeded];
+                       }
     }
                      completion:nil];
   }
    else {
-    [self.growingTextView.superview layoutIfNeeded];
-  }
+     if (self.heightConstraint == nil) {
+       CGRect frame = self.growingTextView.frame;
+       frame.size.height = height;
+       self.growingTextView.frame = frame;
+     }else {
+       [self.growingTextView.superview layoutIfNeeded];
+     }
+   }
 }
 
 - (void)setText:(NSString *)text withAnimation:(BOOL)animated {
