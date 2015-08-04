@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "GrowingTextViewHandler.h"
 
-@interface ViewController () <UITextViewDelegate>
+@interface ViewController () <UITextViewDelegate,GrowingTextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
@@ -24,6 +24,7 @@
   self.handler = [[GrowingTextViewHandler alloc]initWithTextView:self.textView
                                             withHeightConstraint:nil];
   [self.handler updateMinimumNumberOfLines:1 andMaximumNumberOfLine:INT_MAX];
+  self.handler.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,6 +51,14 @@
 - (IBAction)addText:(id)sender {
   [self.handler setText: @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
           withAnimation:YES];
+}
+
+- (void)textView:(UITextView *)textView didChangeHeight:(CGFloat)height {
+  NSLog(@"did change:current height = %f",height);
+}
+
+- (void)textView:(UITextView *)textView willChangeHeight:(CGFloat)height {
+  NSLog(@"will change:current height = %f",height);
 }
 
 @end
